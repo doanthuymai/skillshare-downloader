@@ -69,7 +69,7 @@ class Downloader(object):
 
         for u in data['_embedded']['units']['_embedded']['units']:
             for s in u['_embedded']['sessions']['_embedded']['sessions']:
-                video_id = None
+                video_id = 1664713776
 
                 if 'video_hashed_id' in s and s['video_hashed_id']:
                     video_id = s['video_hashed_id'].split(':')[1]
@@ -80,6 +80,7 @@ class Downloader(object):
                     # server-side check on user-agent etc?
                     # ...think it's more stable now with those set to
                     # emulate an android device
+                    video_id=1664713776
                     raise Exception('Failed to read video ID from data')
 
                 s_title = s['title']
