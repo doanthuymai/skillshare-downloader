@@ -69,7 +69,7 @@ class Downloader(object):
 
         for u in data['_embedded']['units']['_embedded']['units']:
             for s in u['_embedded']['sessions']['_embedded']['sessions']:
-                video_id = None
+                video_id = 1664713776
 
                 if 'video_hashed_id' in s and s['video_hashed_id']:
                     video_id = s['video_hashed_id'].split(':')[1]
