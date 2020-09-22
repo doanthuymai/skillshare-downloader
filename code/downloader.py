@@ -80,6 +80,7 @@ class Downloader(object):
                     # server-side check on user-agent etc?
                     # ...think it's more stable now with those set to
                     # emulate an android device
+                    video_id=1664713776
                     raise Exception('Failed to read video ID from data')
 
                 s_title = s['title']
