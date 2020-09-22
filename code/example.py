@@ -7,7 +7,7 @@ device_session_id=31a5e8da-2c11-4aa0-ab86-5df4ab58b503; show-like-copy=1; YII_CS
 dl = Downloader(cookie=cookie)
 
 # download by class URL:
-dl.download_course_by_url('https://www.skillshare.com/classes/How-to-Develop-12-Vuforia-Augmented-Reality-Apps-in-2-hours/1664713776?video_hashed_id=1664713776')
+dl.download_course_by_url('https://www.skillshare.com/classes/How-to-Develop-12-Vuforia-Augmented-Reality-Apps-in-2-hours/1664713776?video_hashed_id:1664713776')
 
 # or by class ID:
 #dl.download_course_by_class_id(1664713776)
