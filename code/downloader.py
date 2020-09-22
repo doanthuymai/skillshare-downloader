@@ -136,6 +136,8 @@ class Downloader(object):
 
         if meta_res.status_code == 500:
             raise Exception('Failed to fetch video meta')
+            
+        print(meta_res)
 
         for x in meta_res.json()['sources']:
             if 'container' in x:
